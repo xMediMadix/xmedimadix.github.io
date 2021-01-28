@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/background2.jpg");
 }
 
 .navbar {
@@ -22,7 +23,7 @@ body {
     padding-left: 20px;
 }
 
-.background-content {
+.background-content{
     position: absolute;;
     top: 40%;
     width: 100%;
@@ -55,8 +56,45 @@ body {
     background-position: center;
     color: #efefef !important;
     background-attachment: fixed;
+    padding-top: 25px;
     padding-bottom: 50px;
 }
 #teaching-content h2{
     font-weight: bolder;
+}
+#teaching-content .link{
+    text-decoration: none;
+    color: #fff;
+}
+#teaching-content .link:hover{
+    color: #797979;
+}
+
+/*operacios rendszerek gyak*/
+#os h3 {
+    color: #efefef !important;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+
+#os h3::after {
+    content: '';
+    background: #ffffff;
+    display: block;
+    height: 3px;
+    width: 60rem;
+    margin: 10px auto 5px;
+}
+.card-header, .btn, .btn-link{
+    background: #797979;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-body{
+    color: #000;
+    text-align: center;
 }
