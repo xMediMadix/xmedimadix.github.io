@@ -173,3 +173,20 @@ body {
     font-size: 24px;
     font-weight: bolder;
 }
+
+#alert{
+    width:500px;
+    overflow: hidden;
+    background: #eaeaea;
+    box-shadow: 0 0 20px black;
+    border: 5px solid #4b4b4b;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:9999;
+    padding: 10px;
+    text-align:center;
+    display: none;
+}

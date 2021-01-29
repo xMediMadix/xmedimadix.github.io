@@ -11,13 +11,18 @@ function checkAnswer(number){
     let answer = document.getElementById("textarea"+number);
     let rows = results[number].split("\\n");
     let process = rows.join("\n");
-
+    let result;
+    let result_img;
     if(answer.value === process){
-        alert("HELYES VÁLASZ!");
+        result = "Szép munka!";
+        result_img = "../../assets/img/good.png"
     }else{
-        alert("Valami még nem jó, próbáld újra!");
+        result = "Ajjaj valami hiba van!";
+        result_img = "../../assets/img/wrong.png"
     }
-
+    document.getElementById("res-text").innerHTML = result;
+    document.getElementById("res-img").src = result_img;
+    document.getElementById("alert").style.display = "block";
 }
 function createTask(task_type, task_title, task_description, task_file){
     //Az az element, amely szülője a feladatoknak
@@ -67,6 +72,11 @@ function createTask(task_type, task_title, task_description, task_file){
     }
     button.innerHTML = "Ellenőrzés";
     input_field.appendChild(button);
+
+    let alertButton = document.getElementById("alert-button");
+    alertButton.onclick = function(){
+        document.getElementById("alert").style.display = "none";
+    }
 }
 
 
