@@ -66,6 +66,7 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
 #teaching-content .link:hover{
     color: #797979;
 }
@@ -94,7 +95,35 @@ body {
     font-size: 20px;
     font-weight: 700;
 }
+.card{
+    border: 5px solid #4b4b4b;
+    border-radius: 15px;
+}
 .card-body{
     color: #000;
     text-align: center;
+}
+
+.link-img{
+    filter:grayscale(0%);
+}
+
+.link-img:hover{
+    filter:grayscale(50%);
+    transition: .3s ease-in-out;
+}
+
+.select{
+    text-decoration: none;
+    color: #fff;
+}
+.select:hover{
+    color:#fff;
+}
+.card-body a{
+    font-weight: bolder;
+    color: #000;
+}
+.card-body a:hover{
+    text-decoration: underline ;
 }
