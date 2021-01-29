@@ -75,13 +75,29 @@ body {
 #os h3 {
     color: #efefef !important;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 65px;
     padding-bottom: 10px;
 }
 
 #os h3::after {
     content: '';
     background: #ffffff;
+    display: block;
+    height: 3px;
+    width: 60rem;
+    margin: 10px auto 5px;
+}
+#os h4 {
+    color: #2d2d2d !important;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#os h4::after {
+    content: '';
+    background: #2d2d2d;
     display: block;
     height: 3px;
     width: 60rem;
@@ -126,4 +142,27 @@ body {
 }
 .card-body a:hover{
     text-decoration: underline ;
+}
+/*feladatok*/
+.task-content{
+    background: #ececec;
+    border: 5px solid #4b4b4b;
+    border-radius: 15px;
+}
+.task, .input-file, .result-input-field{
+    padding: 0 2rem 0 2rem;
+    text-align: justify;
+}
+
+.input-file a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+.input-file a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.check-button{
+    width: 100%;
 }
