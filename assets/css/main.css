@@ -181,7 +181,7 @@ body {
     box-shadow: 0 0 20px black;
     border: 5px solid #4b4b4b;
     border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);

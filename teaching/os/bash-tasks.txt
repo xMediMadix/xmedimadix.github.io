@@ -2,7 +2,3 @@ cim#1. feladat
 leiras# feladat leirasa
 bemeno#Az input fájlt letöltheted <a href="#">ide kattintva</a>
 valasz#igen
-cim#2. feladat
-leiras# feladat leirasa
-bemeno#Az input fájlt letöltheted <a href="#">ide kattintva</a>
-valasz#igen
