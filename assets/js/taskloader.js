@@ -13,7 +13,7 @@ function checkAnswer(number){
     let process = rows.join("\n");
     let result;
     let result_img;
-    if(answer.value === process){
+    if(answer.value.trim() === process.trim()){
         result = "Szép munka!";
         result_img = "../../assets/img/good.png"
     }else{
