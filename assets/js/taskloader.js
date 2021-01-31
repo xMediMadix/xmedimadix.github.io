@@ -55,7 +55,7 @@ function createTask(task_type, task_title, task_description, task_file){
     let input_label = document.createElement("label");
     input_label.for="exampleFormControlTextarea1";
     input_label.classList.add("form-label");
-    input_label.innerHTML = "Másold be a kimeneti fájl tartalmát az alábbi mezőbe:"
+    input_label.innerHTML = "Írd/másold be a megfelelő eredményt alábbi mezőbe:"
     input_field.appendChild(input_label);
 
     let textarea = document.createElement("textarea");
