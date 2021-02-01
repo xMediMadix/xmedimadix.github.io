@@ -1,7 +1,7 @@
 #Adott inputkent egy data.sql fajl, cat paranccsal kiirjuk a tartalmat,
 #majd pipeline-t hasznalva ezt atadjuk a sort parancsnak, amely a sorokat abc sorrendbe rendezezi.
 #Ezt ismet pipeline-t hasznalva atadjuk a uniq parancsnak, amely az egymas utan ismetlodo sorokbol csak 1-et tart meg
-#(ezert kellett elobb abc szerint rendezni) es ezt a '>' karakterrel beleiranyitjuk egy masik fajlba.
+#(ezert kellett elobb abc szerint rendezni) es ezt a '>' operatorral beleiranyitjuk egy masik fajlba.
 #(Ha nem letezik akkor letrehoz magatol, ha letezik akkor felulirja a tartalmat)
 #Tehat a parancsok:
 cat data.sql | sort | uniq > eredmeny.sql

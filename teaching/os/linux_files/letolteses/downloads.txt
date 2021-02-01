@@ -1,4 +1,4 @@
-#Eloszor is a fajt elso sora tartalmazza a fejlecet, ez a tovabbiakban nem kell, igy a tail parancsot hasznalva megszabadulunk tole:
+#Eloszor is a fajl elso sora tartalmazza a fejlecet, ez a tovabbiakban nem kell, igy a tail parancsot hasznalva megszabadulunk tole:
 cat linux2.csv | tail -n +2
 
 #Az egrep parancsot hasznalva csak azokat a sorokat tartjuk meg amelyek tipusa 'film':
