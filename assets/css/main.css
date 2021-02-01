@@ -34,7 +34,19 @@ body {
 .background-content h1 {
     font-size: 4em;
 }
-
+#footeros{
+    position: fixed;
+    left:0;
+    bottom:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
 
 #teaching-content h3 {
     text-align: center;
@@ -189,4 +201,14 @@ body {
     padding: 10px;
     text-align:center;
     display: none;
+}
+#footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
 }
