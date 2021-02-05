@@ -1,0 +1,15 @@
+#A fajl elso sora tartalmazza a fejlecet, ez a tovabbiakban csak bezavarna, igy a tail parancsot hasznalva levalasztjuk:
+cat lol.csv | tail -n +2
+
+#A feladat szempontjabol se a datum sem a jatekosok nevei nem kellenek igy a cut parancs segitsegevel csak a harmadik oszlopot tartjuk meg, ami a poziciok
+cat lol.csv | tail -n +2 | cut -d ";" -f 3
+
+#Ahhoz, hogy megtudjuk hany kulonbozo pozicio szerepel, torolni kell az ismetlodeseket es csak 1 peldanyt meghagyni kozuluk.
+#Ehhez eloszor abc szerint rendezzuk, majd a uniq parancsot hasznalva a fent emlitett ismetlodesekbol csak 1-et tartunk meg
+cat lol.csv | tail -n +2 | cut -d ";" -f 3 | sort | uniq
+
+#Mar megvan, hogy hany kulonbozo pozicio szerepel a fajlban, igy csak a megmaradt sorok hosszat kell lekerdeznunk, erre pedig a wc -l parancsot hasznaljuk
+cat lol.csv | tail -n +2 | cut -d ";" -f 3 | sort | uniq | wc -l
+
+#Vegul pedig a feladat kerte, hogy ezt iranyitsuk bele egy tetszoleges fajlba:
+cat lol.csv | tail -n +2 | cut -d ";" -f 3 | sort | uniq | wc -l | tee poz.txt
