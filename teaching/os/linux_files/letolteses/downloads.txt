@@ -1,14 +1,14 @@
 #Eloszor is a fajl elso sora tartalmazza a fejlecet, ez a tovabbiakban nem kell, igy a tail parancsot hasznalva megszabadulunk tole:
-cat linux2.csv | tail -n +2
+cat downloads.csv | tail -n +2
 
 #Az egrep parancsot hasznalva csak azokat a sorokat tartjuk meg amelyek tipusa 'film':
-cat linux2.csv | tail -n +2 | egrep -e 'film'
+cat downloads.csv | tail -n +2 | egrep 'film'
 
 #Viszont ez meg tartalmazza a sikeres es sikertelen letolteseket is, igy szinten az egrep paranccsal csak azokat tartjuk meg amelyek megszakadtak:
-cat linux2.csv | tail -n +2 | egrep -e 'film' | egrep -e 'megszakadt'
+cat downloads.csv | tail -n +2 | egrep 'film' | egrep 'megszakadt'
 
 #A cut paranccsal megszabadulunk a felesleges oszlopoktol, az elvalaszto karakter a ';', es az elso oszlopra van szuksegunk, hiszen az tartalmazza a fajl kodokat
-cat linux2.csv | tail -n +2 | egrep -e 'film' | egrep -e 'megszakadt' | cut -d ';' -f 1
+cat downloads.csv | tail -n +2 | egrep 'film' | egrep 'megszakadt' | cut -d ';' -f 1
 
 #Igy mar majdnem jo az eredmenyunk, viszont meg abc szerint rendezni kell, ezt pedig a sort paranccsal tehetjuk meg:
-cat linux2.csv | tail -n +2 | egrep -e 'film' | egrep -e 'megszakadt' | cut -d ';' -f 1 | sort
+cat downloads.csv | tail -n +2 | egrep 'film' | egrep 'megszakadt' | cut -d ';' -f 1 | sort

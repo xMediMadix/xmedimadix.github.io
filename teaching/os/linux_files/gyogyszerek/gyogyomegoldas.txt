@@ -1,11 +1,11 @@
 #irjuk ki azokat a sorokat, amelyek vagy a "paracetamol"-t vagy az "ibuprofen"-t tartalmazzak, ezt pedig az egrep-pel tesszuk meg:
-cat gyogyo.txt | egrep -e "paracetamol" -e "ibuprofen"
+cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen"
 
 #hatoanyag szerint mar leszurtuk, igy mostmar eleg csak a nev oszlopot megtartani, azaz cut-tal levagjuk es megtartjuk az elso oszlopot :
-cat gyogyo.txt | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1
+cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1
 
 #rendezzuk abc szerint:
-cat gyogyo.txt | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort
+cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort
 
 #majd nagybetusitjuk a sorokat:
-cat gyogyo.txt | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort | tr a-z A-Z
+cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort | tr a-z A-Z

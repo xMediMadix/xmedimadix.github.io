@@ -1,0 +1,5 @@
+#A feladat kiter ra, hogy a feladatban szerepelhetnek a hos nevek nagy es kis kezdobetuvel is, de ettol meg azok egynek szamitanak, ennek megoldasara pl minden nagybetut kisbetusitunk a tr parancs segitsegevel:
+cat marvel_input.txt | tr A-Z a-z 
+
+#Azt kell megszamolnunk, hanyan NEM a "vasember"-re szavaztak, tehat hasznaljuk az egrep -v kapcsolojat ami azokat a sorokat irja ki, amelyben nem szerepel a "vasember" string, majd a -c kapcsolot hasznalva ezeknek a darab szamat irja ki:
+cat marvel_input.txt | tr A-Z a-z | egrep -v -c "vasember"
