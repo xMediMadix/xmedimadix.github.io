@@ -1,11 +1,13 @@
-#irjuk ki azokat a sorokat, amelyek vagy a "paracetamol"-t vagy az "ibuprofen"-t tartalmazzak, ezt pedig az egrep-pel tesszuk meg:
+#irjuk ki azokat a sorokat, amelyek vagy a "paracetamol"-t vagy az "ibuprofen"-t tartalmazzak, ezt pedig az egrep-pel tesszuk meg
+#A -e kapcsolo segitsegevel tobb mintat adhatunk meg es azon sorok lesznek kiirva amelyekben vagy az egyik vagy a masik stringre megtalalhato
+#(Logikai megengedo VAGY)
 cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen"
 
-#hatoanyag szerint mar leszurtuk, igy mostmar eleg csak a nev oszlopot megtartani, azaz cut-tal levagjuk es megtartjuk az elso oszlopot :
+#hatoanyag szerint mar leszurtuk, igy mar eleg csak a nev oszlopot megtartani, azaz cut-tal pontosvesszo menten levagjuk es megtartjuk az elso oszlopot :
 cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1
 
-#rendezzuk abc szerint:
+#rendezzuk abc szerint a sort paranccsal:
 cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort
 
-#majd nagybetusitjuk a sorokat:
+#majd nagybetusitjuk a sorokat a tr parancsot hasznalva:
 cat gyogyo.csv | egrep -e "paracetamol" -e "ibuprofen" | cut -d ";" -f 1 | sort | tr a-z A-Z

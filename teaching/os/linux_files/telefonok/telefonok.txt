@@ -1,0 +1,17 @@
+#Az elso sor a fejlecet tartalmazza, ez szamunkra nem kell, igy a masodik sortol kezdve tartsuk meg az adatokat, ehhez pedig a tail parancsot hasznaljuk
+tail -n +2 telefonok.csv
+
+#A tulajdonos nevekre a feladat szempontjabol nincs szukseg, igy a cut paranccsal '-' karakter menten daraboljuk az oszlopokat es csak a masodikat tartjuk meg
+tail -n +2 telefonok.csv | cut -d "-" -f 2
+
+#A telefon pontos tipusa sem kell nekunk, csak a marka nevek, igy ismet a cut parancsot hasznalva szokozok menten darabolva csak az elso oszlopot tartjuk meg
+tail -n +2 telefonok.csv | cut -d "-" -f 2 | cut -d " " -f 1
+
+#A markakat nagybetusitve kell majd kiirni, igy hasznaljuk a tr parancsot hozza
+tail -n +2 telefonok.csv | cut -d "-" -f 2 | cut -d " " -f 1 | tr a-z A-Z
+
+#Rendezzuk a markakat abc szerint a sort paranccsal
+tail -n +2 telefonok.csv | cut -d "-" -f 2 | cut -d " " -f 1 | tr a-z A-Z | sort
+
+#Majd vegul szuntessuk meg az ismetlodeseket
+tail -n +2 telefonok.csv | cut -d "-" -f 2 | cut -d " " -f 1 | tr a-z A-Z | sort | uniq
