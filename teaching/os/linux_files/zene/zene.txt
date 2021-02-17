@@ -1,0 +1,15 @@
+#Atalakitjuk az osszes nagy betut kisbetuve, hogy osszehasonlitaskor ezt a problemat lekezeljuk
+cat input.txt | tr A-Z a-z
+
+#A tr -d kapcsoloja segitsegevel toroljuk a szovegbol az osszes kerdojelet
+cat input.txt | tr A-Z a-z | tr -d ?
+
+#Ahhoz, hogy valahogyan ne a sorokat, hanem a szavakat tudjuk osszehasonlitani egymassal, ehhez egy megoldas az, ha minden szokoz menten uj sorba valasztjuk el az aktualis szavat
+cat input.txt | tr A-Z a-z | tr -d ? | tr " " "\n"
+
+#Igy mar minden szo kulon sorban talalhato, tehat ahhoz, hogy az ismetlodesektol megszabaduljunk abc szerint rendezzuk, majd uniq paranccsal toroljuk az ismetleseket
+cat input.txt | tr A-Z a-z | tr -d ? | tr " " "\n" | sort | uniq
+
+#Legvegul pedig a megmaradt sorok szama jelenti azt, hogy osszesen hany kulonbozo szo talalhato a szovegfajlban
+cat input.txt | tr A-Z a-z | tr -d ? | tr " " "\n" | sort | uniq | wc -l
+
