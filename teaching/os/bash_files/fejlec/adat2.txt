@@ -1,0 +1,9 @@
+Film;IMDb
+WandaVision;8.3
+The Walking Dead;8.2
+Game of Thrones;9.3
+Money Heist;8.3
+The Big Bang Theory;8.1
+The Good Doctor;8.2
+The 100;7.6
+Family Guy;8.1

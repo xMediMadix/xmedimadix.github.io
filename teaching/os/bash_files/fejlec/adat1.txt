@@ -1,0 +1,11 @@
+Sorozat;IMDb
+The Lord of the Rings: The Return of the King;8.9
+Interstellar;8.5
+Avengers: Infinity War;8.4
+Toy Stroy:8.3
+A Beautiful Mind;8.2
+Jurassic Park;8.1
+Avengers: Endgame;8.4
+Captain Marvel;6.9
+Thor: Ragnarok;7.9
+Bohemian Rhapsody;8.0
