@@ -7,7 +7,7 @@ leiras#Egy barátod születésnapjára ajándékot terveztek venni a barátaidda
 bemeno#A feladat megoldása nemsokára elérhető lesz.
 valasz#5\n1240
 cim#3. feladat
-leiras#Töltsd le az input fájlt és csomagold ki. Találsz benne egy kepek.sh fájlt. A feladatot, hogy írj egy olyan szkriptet, amely megszámolja, hogy abban a könyvtárban, amelyben a szkript is van, hány gif és hány png kiterjesztésű fájl található. Hibákat nem kell lekezelned. A program írja ki a konzolra az eredményt az alábbi formátumban:<br><br>png:{png_darab}<br>gif:{gif_darab}<br><br>Ahol a {png_darab} helyére az a szám kerüljön, hogy hány png kiterjesztésű kép található a mappában, a {gif_darab} pedig ugyanígy a gif kiterjesztésű fájlok száma.<br>Ezt a kimenetet másold be a lent található szövegdobozba.
+leiras#Töltsd le az input fájlt és csomagold ki. Találsz benne egy kepek.sh fájlt. A feladatot, hogy írj egy olyan szkriptet, amely megszámolja, hogy abban a könyvtárban amelyben a szkript is van, hány gif és hány png kiterjesztésű fájl található. A könyvtárban találatóak mappák is, ezeket feldolgozáskor szűrd le és hagyja ki a program. Felteheted, hogy a könyvtárban minden fájlnak van kiterjesztésre. Mást nem kell lekezelned. A program írja ki a konzolra az eredményt az alábbi formátumban:<br><br>png:{png_darab}<br>gif:{gif_darab}<br><br>Ahol a {png_darab} helyére az a szám kerüljön, hogy hány png kiterjesztésű kép található a mappában, a {gif_darab} pedig ugyanígy a gif kiterjesztésű fájlok száma.<br>Ezt a kimenetet másold be a lent található szövegdobozba.
 bemeno#Az input fájlt letöltheted <a href="./bash_files/kepek/kepek.zip" target="_blank">ide kattintva</a>, a megoldás nemsokára elérhető lesz.
 valasz#png:3\ngif:2
 cim#4. feladat
