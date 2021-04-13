@@ -9,7 +9,7 @@ fi
 
 # Ha letezett a megoldas.txt fajl ekkor ujrairjuk a tartalmat,
 # hogy az elso sor legyen a Megoldas: string
-w# Ha nem letezett a fajl, akkor letrehozza elobb
+# Ha nem letezett a fajl, akkor letrehozza elobb
 echo "Megoldas:" > megoldas.txt
 
 # Ne feledjuk, hogy a megadott mappat kell bejarni, es nem azt a konyvtarat, amelyben a szkript futtatva lett,

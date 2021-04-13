@@ -91,10 +91,10 @@ window.onload = function () {
                 allText = rawFile.responseText;
                 let datas = allText.split('\n');
                 for(let i=0;i<datas.length;i=i+4){
-                    let title = datas[i].split('#').pop();
-                    let description = datas[i+1].split('#').pop();
-                    let file = datas[i+2].split('#').pop();
-                    results[title.split('.').shift()] = datas[i+3].split("#").pop();
+                    let title = datas[i].split('$').pop();
+                    let description = datas[i+1].split('$').pop();
+                    let file = datas[i+2].split('$').pop();
+                    results[title.split('.').shift()] = datas[i+3].split("$").pop();
                     createTask(type,title,description,file);
                 }
             }

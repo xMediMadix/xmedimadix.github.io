@@ -1,0 +1,8 @@
+A Naprendszer központi csillagában a Naprendszer tömegének 99,87%-a koncentrálódik.
+Óriási tömege révén a Nap hatalmas gravitációs erőt fejt ki, s ez az erő tartja együtt a rendszert,
+és irányítja valamennyi bolygó és kisebb égitest mozgását is.
+A 19. században végzett vizsgálatok során Joseph von Fraunhofer elsőként figyelt meg elnyelési vonalakat a Nap színképében,
+amelyből a naplégkörben lévő kémiai összetételre lehet következtetni.
+Hans Bethe 1939-ben dolgozta ki a magfúzió elméletét, ami magyarázatot adott a Nap energiatermelésére.
+A Napból a Föld légköréhez merőlegesen érkező fény mennyisége átlagosan 1363 W/m2, ez a napállandó, ami a napfoltciklussal kb. 0,1%-ot ingadozik.
+A Nap légkörét főként könnyebb kémiai elemek alkotják: 70% hidrogén, 28% hélium, 2%-ban pedig nehezebb elemek. A magban már csak 35% a hidrogén aránya (tömeg szerint).

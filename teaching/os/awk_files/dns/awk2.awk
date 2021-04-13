@@ -1,11 +1,11 @@
 #!/usr/bin/gawk -f
 
-/(^TTAGCGGA)(A{2}|T{2}|G{2}|C{2}){4}([ATGC]{4})$/{
+$0~/(^TTAGCGGA)(A{2}|T{2}|G{2}|C{2}){4}(A{4}|T{4}|G{4}|C{4})$/{
     #A DNS szekvencia az AATCGCCT szekvencia KOMPLEMENTERÉVEL kell kezdődjön:
     #^(TTAGCGGA), mivel A komplementere T és C komplomentere G, a '^' karakter jelenti azt, hogy ezzel a mintával kell kezdődnie a soroknak.
 
-    #Az utolsó 4 karakternek egyező kell legyen a 4 bázis valamelyikével: ([ATGC]{4})$ ahol
-    #az [ATGC] közül vesz egy karaktert, ezt pontosan 4x ({4}) kell egymás után leírnia,
+    #Az utolsó 4 karakternek egyező kell legyen a 4 bázis valamelyikével: (A{4}|T{4}|G{4}|C{4})$ ahol
+    #az ATGC közül vesz egy karaktert, ezt pontosan 4x ({4}) kell egymás után leírnia,
     #és ezzel a sorozattal kell befejeződnie, ezért kell a $ karakter a végére
 
     #Eddig lefedtünk összesen 8 kezdő karaktert és a végén még 4-et, ami összesen 12,
