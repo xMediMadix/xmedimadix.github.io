@@ -33,6 +33,7 @@ function createTask(task_type, task_title, task_description, task_file){
     let title = document.createElement("h4");
     title.innerHTML = task_title;
     title.classList.add("display-4", "font-weight-bold");
+    title.style.color = "black";
     root.appendChild(title);
 
     //feladat leírása

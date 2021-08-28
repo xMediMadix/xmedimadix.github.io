@@ -2,85 +2,95 @@
 <html lang="hu">
 <head>
     <title>Madarász Máté</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Madarász Máté oktatói weboldala">
+    <meta name="keywords" content="Madarász Máté, MediMadi, Szkriptnyelvek, Operációs rendszerek">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="shortcut icon" type="image/png" href="../../assets/img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<div>
-    <!-- Navigation start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="../../index.html">Madarász Máté</a>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../os.html">Vissza</a>
-                    </li>
-                </ul>
-            </div>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+<!-- Navigation start -->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light fixed-top" id="pb-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="../../index.html">Madarász Máté</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
+                aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="navbar-toggler-icon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../../index.html#home">Kezdőlap</a></li>
+                <li class="nav-item"><a class="nav-link" href="../os.html">Vissza</a></li>
+            </ul>
         </div>
-    </nav>
-    <!-- Navigation end -->
-    <!-- Oktatás start -->
+    </div>
+</nav>
+<!-- Navigation end -->
+<!-- Oktatás start -->
 
-    <section id="os">
-        <div class="container">
-            <h3 class="display-4 font-weight-bold">Awk</h3>
-            <div class="accordion mt-5" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingKovetelmeny">
-                        <h2 class="clearfix mb-0">
-                            <a class="btn btn-link select" data-toggle="collapse" data-target="#collapseKovetelmeny"
-                               aria-expanded="true" aria-controls="collapseKovetelmeny">
-                                SEGÍTSÉG A FELADATOKHOZ
-                            </a>
-                        </h2>
-                    </div>
-                    <div id="collapseKovetelmeny" class="collapse" aria-labelledby="headingKovetelmeny" data-parent="#accordionExample">
-                        <div class="help">
-                            Az alábbiakban találjátok az <b>AWK</b> anyagrészhez tartozó <b>gyakorló feladatokat</b>.
-                            A feladatok többségénél adott egy <b>input fájl</b> amit letölthettek a kijelölt helyeken, ezt kell feldolgozni.
-                            Figyeljetek oda, hogy mindig a <b>megfelelő formában</b> írjátok be a kért válaszokat, akár egy szóköz többlettel is már helytelen a válasz (viszont a beírtak végén szereplő sortörések, szóközök és egyéb whitespace karakterek nem jelentenek gondot).<br>
-                            <b>TIPP: Amennyiben a konzolról kell az eredményt bemásolni, abban az esetben kijelölés után a "ctrl+c" nem használható, helyette használjátok a "ctrl+shift+c" billentyűkombinációt.</b>
-                            A feladatok <b>egy megoldása</b> is szintén letölthető minden feladatnál, de mindenképp próbáljátok meg először magatok megoldani. <b>Konzultáción</b> megnézhetünk feladatokat, illetve igény szerint megoldó videókat is készítek.<br>
-                            Ha találtok benne <b>hibát</b> kérem írjatok az alábbi email címre:<br>
-                            <b>Madarasz.Mate@stud.u-szeged.hu</b><br>
-                        </div>
-                        <div class="luck">
-                            Sok sikert!
-                        </div>
+<section class="pb_section pb_section_v1 " id="course">
+    <div class="container">
+        <h1 class="text-center mt-5 font-weight-bold">AWK</h1>
+        <div class="divider"></div>
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingKovetelmeny">
+                    <h2 class="clearfix mb-0">
+                        <a class="btn btn-link select" data-toggle="collapse" data-target="#collapseKovetelmeny"
+                           aria-expanded="true" aria-controls="collapseKovetelmeny">
+                            SEGÍTSÉG A FELADATOKHOZ
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapseKovetelmeny" class="collapse" aria-labelledby="headingKovetelmeny"
+                     data-parent="#accordionExample">
+                    <div class="card-body">
+                        Az alábbiakban találjátok az <b>AWK</b> anyagrészhez tartozó <b>gyakorló feladatokat</b>.
+                        A feladatok többségénél adott egy <b>input fájl</b> amit letölthettek a kijelölt helyeken, ezt
+                        kell feldolgozni.
+                        Figyeljetek oda, hogy mindig a <b>megfelelő formában</b> írjátok be a kért válaszokat, akár egy
+                        szóköz többlettel is már helytelen a válasz (viszont a beírtak végén szereplő sortörések,
+                        szóközök és egyéb whitespace karakterek nem jelentenek gondot).<br>
+                        <b>TIPP: Amennyiben a konzolról kell az eredményt bemásolni, abban az esetben kijelölés után a
+                            "ctrl+c" nem használható, helyette használjátok a "ctrl+shift+c" billentyűkombinációt.</b>
+                        A feladatok <b>egy megoldása</b> is szintén letölthető minden feladatnál, de mindenképp
+                        próbáljátok meg először magatok megoldani. <b>Konzultáción</b> megnézhetünk feladatokat, illetve
+                        igény szerint megoldó videókat is készítek.<br>
+                        Ha találtok benne <b>hibát</b> kérem írjatok az alábbi email címre:<br>
+                        <b>madarasz@inf.u-szeged.hu</b><br>
                     </div>
                 </div>
             </div>
-            <div class="task-content" id="awk-tasks">
-                <!--js-sel létrehozott tagek -->
-
-            </div>
         </div>
-    </section>
-    <!-- Oktatás end -->
-</div>
+        <div class="task-content" id="awk-tasks">
+            <!--js-sel létrehozott tagek -->
+
+        </div>
+    </div>
+</section>
+<!-- Oktatás end -->
 <!-- alert -->
 <div id="alert">
     <img id="res-img" src="../../assets/img/wrong.png"/>
     <h1 id="res-text">Szép munka!</h1>
     <button id="alert-button" class="btn btn-dark">Bezár</button>
 </div>
-<script src="../../assets/js/taskloader.js"></script>
+
 <footer>
-    <div id="footer">
+    <div id="footeros">
         Copyright © 2021 Madarász Máté
     </div>
 </footer>
+<script src="../../assets/js/taskloader.js"></script>
 </body>
 </html>
