@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -110,8 +114,8 @@ body {
     content: "";
 }
 
-.cover-bg-opacity-4:before {
-    opacity: .4;
+.cover-bg-opacity-3:before {
+    opacity: .3;
 }
 
 .heading {
