@@ -14,26 +14,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="shortcut icon" type="image/png" href="../assets/img/icon.png">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="../../assets/img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body data-spy="scroll" data-target="#pb-navbar" data-offset="200" class="full_page_background"
-      style="background-image: url(../assets/img/teaching.png)">
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 <!-- Navigation start -->
 <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light fixed-top" id="pb-navbar">
     <div class="container">
-        <a class="navbar-brand" href="../index.html">Madarász Máté</a>
+        <a class="navbar-brand" href="../../index.html">Madarász Máté</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
                 aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="navbar-toggler-icon"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="probootstrap-navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html#home">Kezdőlap</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html#about">Rólam</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html#teaching">Oktatás</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html#home">Kezdőlap</a></li>
+                <li class="nav-item"><a class="nav-link" href="../scriptlang.html">Vissza</a></li>
             </ul>
         </div>
     </div>
@@ -41,47 +38,45 @@
 <!-- Navigation end -->
 <!-- Oktatás start -->
 
-
 <section class="pb_section pb_section_v1 " id="course">
     <div class="container">
-        <h1 class="text-center mt-5 font-weight-bold">Szkriptnyelvek Gyakorlat</h1>
+        <h1 class="text-center mt-5 font-weight-bold">JavaScript</h1>
         <div class="divider"></div>
         <div class="accordion mt-5" id="accordionExample">
             <div class="card">
-                <div class="card-header" id="headingBash">
+                <div class="card-header" id="headingKovetelmeny">
                     <h2 class="clearfix mb-0">
-                        <a class="btn btn-link select" data-toggle="collapse" data-target="#collapseBash"
-                           aria-expanded="true" aria-controls="collapseBash">
-                            Python
+                        <a class="btn btn-link select" data-toggle="collapse" data-target="#collapseKovetelmeny"
+                           aria-expanded="true" aria-controls="collapseKovetelmeny">
+                            SEGÍTSÉG A FELADATOKHOZ
                         </a>
                     </h2>
                 </div>
-                <div id="collapseBash" class="collapse" aria-labelledby="headingBash"
+                <div id="collapseKovetelmeny" class="collapse" aria-labelledby="headingKovetelmeny"
                      data-parent="#accordionExample">
-                    <div class="card-body">
-                        <a href="./scriptlangs/python.html">Kattints ide a minta zh feladat eléréséhez</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingAwk">
-                    <h2 class="clearfix mb-0">
-                        <a class="btn btn-link select" data-toggle="collapse" data-target="#collapseAwk"
-                           aria-expanded="true" aria-controls="collapseAwk">
-                            JavaScript
-                        </a>
-                    </h2>
-                </div>
-                <div id="collapseAwk" class="collapse" aria-labelledby="headingAwk" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <a href="./scriptlangs/js.html">Kattints ide a minta zh feladat eléréséhez</a>
+                    <div class="card-body" style="text-align: justify">
+                        Az alábbiakban találjátok a JavaScript anyagrészhez tartozó gyakorló feladatokat.
+                        Minden feladathoz tartozik egy <b>.zip</b> file, amelyet le kell tölteni.
+                        Ebben találhattok 2 fájlt:
+                        <ul>
+                            <li><b>feladat.pdf</b>: A feladat leírását találjátok meg benne</li>
+                            <li><b>megoldas.js</b>: A feladat <i>egy</i> megoldását találjátok meg benne</li>
+                        </ul>
+                        Ha találtok benne <b>hibát</b> kérem írjatok az alábbi email címre:<br>
+                        <b>madarasz@inf.u-szeged.hu</b><br>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="task-content" id="bash-tasks">
+            <h4 class="display-4 font-weight-bold" style="color: black;">1. Minta ZH feladat</h4>
+            <p class="task">Ezzel a feladattal gyakorolhatjátok a ZH feladat második részét, amikor is osztállyal kapcsolatos feladatokat kell megoldanotok.</p>
+            <form action="https://madarasz-mate.hu/teaching/scriptlangs/js/mintazh_js.zip">
+                <button type="submit" class="btn btn-dark check-button">Feladat letöltése</button>
+            </form>
+        </div>
     </div>
 </section>
-
 <!-- Oktatás end -->
 
 <footer>
